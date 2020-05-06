@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".silent">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_weight="5"
+            android:textAlignment="viewEnd"
+            android:textSize="25sp"
+            android:fontFamily="@font/poppinslight"
+            android:text="Silent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/naxabold"
+                android:text="Master"
+                android:layout_weight="5"
+                android:textAlignment="viewStart"
+                android:textColor="#ffff00"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </Toolbar>
+    <LinearLayout
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Set Time"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="20sp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="5dp"
+            android:weightSum="10">
+        <TextView
+            android:id="@+id/settime"
+            android:background="@drawable/radius"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Start Time"
+            android:layout_weight="5"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/settime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:text="End Time"
+            android:layout_weight="5"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="20sp"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line" />
+        <TextView
+            android:id="@+id/setphone"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Add Phone Number"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="20sp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/addphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radius"
+            android:fontFamily="@font/poppinsmedium"
+            android:paddingVertical="10dp"
+            android:text="Set Phone Number"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="10dp"/>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/naxabold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/time1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/naxabold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/silence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_gravity="center_vertical"
+        app:cornerRadius="5dp"
+        android:text="Make Your Phone Silent"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/poppinsmedium"/>
+</LinearLayout>

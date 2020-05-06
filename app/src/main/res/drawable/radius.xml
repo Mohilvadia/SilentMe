@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Style for "shape_10" -->
+    <!-- Add this snippet to layer-list xml in drawable. -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid />
+            <padding
+                android:top="2dp"
+                android:bottom="2dp"/>
+            <corners android:bottomRightRadius="20dp"
+                android:bottomLeftRadius="20dp"
+                android:topLeftRadius="20dp"
+                android:topRightRadius="20dp"/>
+            <gradient android:type="linear" android:useLevel="false" android:startColor="#000000" android:endColor="#000000" android:angle="90" />
+        </shape>
+    </item>
+</layer-list>
